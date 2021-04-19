@@ -1,0 +1,27 @@
+@keyframes swinging {
+    0% {
+        transform: rotate(-35deg);
+    }
+    50% {
+        transform: rotate(100deg);
+    }
+    100% {
+        transform: rotate(-35deg);
+    }
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    position: relative;
+    top: -20px;
+    left: 500px;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+img {
+    height: 250%;
+}
+
